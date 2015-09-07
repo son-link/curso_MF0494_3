@@ -1,0 +1,18 @@
+C:\Users\Tarde 4\AppData\Local\Temporary Projects\hola_mundo\bin\Debug\hola_mundo.exe
+C:\Users\Tarde 4\AppData\Local\Temporary Projects\hola_mundo\bin\Debug\hola_mundo.pdb
+C:\Users\Tarde 4\AppData\Local\Temporary Projects\hola_mundo\bin\Debug\hola_mundo.xml
+C:\Users\Tarde 4\AppData\Local\Temporary Projects\hola_mundo\obj\x86\Debug\hola_mundo.Form1.resources
+C:\Users\Tarde 4\AppData\Local\Temporary Projects\hola_mundo\obj\x86\Debug\hola_mundo.Resources.resources
+C:\Users\Tarde 4\AppData\Local\Temporary Projects\hola_mundo\obj\x86\Debug\hola_mundo.vbproj.GenerateResource.Cache
+C:\Users\Tarde 4\AppData\Local\Temporary Projects\hola_mundo\obj\x86\Debug\hola_mundo.exe
+C:\Users\Tarde 4\AppData\Local\Temporary Projects\hola_mundo\obj\x86\Debug\hola_mundo.xml
+C:\Users\Tarde 4\AppData\Local\Temporary Projects\hola_mundo\obj\x86\Debug\hola_mundo.pdb
+C:\Users\Tarde 4\documents\visual studio 2010\Projects\hola_mundo\hola_mundo\obj\x86\Debug\hola_mundo.exe
+C:\Users\Tarde 4\documents\visual studio 2010\Projects\hola_mundo\hola_mundo\obj\x86\Debug\hola_mundo.xml
+C:\Users\Tarde 4\documents\visual studio 2010\Projects\hola_mundo\hola_mundo\obj\x86\Debug\hola_mundo.pdb
+C:\Users\Tarde 4\documents\visual studio 2010\Projects\hola_mundo\hola_mundo\bin\Debug\hola_mundo.exe
+C:\Users\Tarde 4\documents\visual studio 2010\Projects\hola_mundo\hola_mundo\bin\Debug\hola_mundo.pdb
+C:\Users\Tarde 4\documents\visual studio 2010\Projects\hola_mundo\hola_mundo\bin\Debug\hola_mundo.xml
+C:\Users\Tarde 4\documents\visual studio 2010\Projects\hola_mundo\hola_mundo\obj\x86\Debug\hola_mundo.Form1.resources
+C:\Users\Tarde 4\documents\visual studio 2010\Projects\hola_mundo\hola_mundo\obj\x86\Debug\hola_mundo.Resources.resources
+C:\Users\Tarde 4\documents\visual studio 2010\Projects\hola_mundo\hola_mundo\obj\x86\Debug\hola_mundo.vbproj.GenerateResource.Cache
