@@ -1,0 +1,9 @@
+C:\Users\Tarde 4\Documents\Visual Studio 2010\Projects\Cual de los 2 numeros es el mayor\Cual de los 2 numeros es el mayor\bin\Debug\Cual de los 2 numeros es el mayor.exe
+C:\Users\Tarde 4\Documents\Visual Studio 2010\Projects\Cual de los 2 numeros es el mayor\Cual de los 2 numeros es el mayor\bin\Debug\Cual de los 2 numeros es el mayor.pdb
+C:\Users\Tarde 4\Documents\Visual Studio 2010\Projects\Cual de los 2 numeros es el mayor\Cual de los 2 numeros es el mayor\bin\Debug\Cual de los 2 numeros es el mayor.xml
+C:\Users\Tarde 4\Documents\Visual Studio 2010\Projects\Cual de los 2 numeros es el mayor\Cual de los 2 numeros es el mayor\obj\x86\Debug\WindowsApplication1.Form1.resources
+C:\Users\Tarde 4\Documents\Visual Studio 2010\Projects\Cual de los 2 numeros es el mayor\Cual de los 2 numeros es el mayor\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\Tarde 4\Documents\Visual Studio 2010\Projects\Cual de los 2 numeros es el mayor\Cual de los 2 numeros es el mayor\obj\x86\Debug\Cual de los 2 numeros es el mayor.vbproj.GenerateResource.Cache
+C:\Users\Tarde 4\Documents\Visual Studio 2010\Projects\Cual de los 2 numeros es el mayor\Cual de los 2 numeros es el mayor\obj\x86\Debug\Cual de los 2 numeros es el mayor.exe
+C:\Users\Tarde 4\Documents\Visual Studio 2010\Projects\Cual de los 2 numeros es el mayor\Cual de los 2 numeros es el mayor\obj\x86\Debug\Cual de los 2 numeros es el mayor.xml
+C:\Users\Tarde 4\Documents\Visual Studio 2010\Projects\Cual de los 2 numeros es el mayor\Cual de los 2 numeros es el mayor\obj\x86\Debug\Cual de los 2 numeros es el mayor.pdb

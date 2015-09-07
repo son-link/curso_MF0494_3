@@ -1,0 +1,9 @@
+C:\Users\Tarde 4\documents\visual studio 2010\Projects\Sacar mayor 3 numeros\Sacar mayor 3 numeros\obj\x86\Debug\WindowsApplication1.Form1.resources
+C:\Users\Tarde 4\documents\visual studio 2010\Projects\Sacar mayor 3 numeros\Sacar mayor 3 numeros\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\Tarde 4\documents\visual studio 2010\Projects\Sacar mayor 3 numeros\Sacar mayor 3 numeros\obj\x86\Debug\Sacar mayor 3 numeros.vbproj.GenerateResource.Cache
+C:\Users\Tarde 4\documents\visual studio 2010\Projects\Sacar mayor 3 numeros\Sacar mayor 3 numeros\bin\Debug\Sacar mayor 3 numeros.exe
+C:\Users\Tarde 4\documents\visual studio 2010\Projects\Sacar mayor 3 numeros\Sacar mayor 3 numeros\bin\Debug\Sacar mayor 3 numeros.pdb
+C:\Users\Tarde 4\documents\visual studio 2010\Projects\Sacar mayor 3 numeros\Sacar mayor 3 numeros\bin\Debug\Sacar mayor 3 numeros.xml
+C:\Users\Tarde 4\documents\visual studio 2010\Projects\Sacar mayor 3 numeros\Sacar mayor 3 numeros\obj\x86\Debug\Sacar mayor 3 numeros.exe
+C:\Users\Tarde 4\documents\visual studio 2010\Projects\Sacar mayor 3 numeros\Sacar mayor 3 numeros\obj\x86\Debug\Sacar mayor 3 numeros.xml
+C:\Users\Tarde 4\documents\visual studio 2010\Projects\Sacar mayor 3 numeros\Sacar mayor 3 numeros\obj\x86\Debug\Sacar mayor 3 numeros.pdb
