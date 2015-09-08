@@ -1,0 +1,4 @@
+C:\Users\Tarde 4\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.calculadora.resources
+C:\Users\Tarde 4\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Inicio.resources
+C:\Users\Tarde 4\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\Tarde 4\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
