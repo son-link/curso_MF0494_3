@@ -1,12 +1,4 @@
 ﻿Module Module1
-    Public Sub limpiaCalc()
-        calculadora.numero1.Text = ""
-        calculadora.numero2.Text = ""
-        calculadora.txtOperador.Text = ""
-        calculadora.txtResultado.Text = ""
-        calculadora.ListResultados.Items.Clear()
-    End Sub
-
     Public Sub limpieza(ByVal origen As String)
         Select Case origen
             Case "calculadora"
