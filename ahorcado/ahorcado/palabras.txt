@@ -1,0 +1,7 @@
+python
+basic
+javascript
+perl
+ruby
+php
+java
