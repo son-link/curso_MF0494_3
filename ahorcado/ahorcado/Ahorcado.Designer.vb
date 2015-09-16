@@ -22,27 +22,17 @@ Partial Class Ahorcado
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.labelAhorcado = New System.Windows.Forms.Label()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Ahorcado))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.labelPalabra = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.LabelFallo1 = New System.Windows.Forms.Label()
-        Me.LabelFallos2al4 = New System.Windows.Forms.Label()
-        Me.LabelFallos5y6 = New System.Windows.Forms.Label()
         Me.TextBoxLetras = New System.Windows.Forms.RichTextBox()
-        Me.LabelFinAhorcado = New System.Windows.Forms.Label()
+        Me.imgAhorcado = New System.Windows.Forms.PictureBox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        CType(Me.imgAhorcado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'labelAhorcado
-        '
-        Me.labelAhorcado.AutoSize = True
-        Me.labelAhorcado.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labelAhorcado.Location = New System.Drawing.Point(18, 17)
-        Me.labelAhorcado.Name = "labelAhorcado"
-        Me.labelAhorcado.Size = New System.Drawing.Size(97, 50)
-        Me.labelAhorcado.TabIndex = 5
-        Me.labelAhorcado.Text = " ______" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "/        |" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label1
         '
@@ -57,15 +47,16 @@ Partial Class Ahorcado
         '
         Me.labelPalabra.AutoSize = True
         Me.labelPalabra.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labelPalabra.Location = New System.Drawing.Point(15, 180)
+        Me.labelPalabra.Location = New System.Drawing.Point(14, 215)
         Me.labelPalabra.Name = "labelPalabra"
-        Me.labelPalabra.Size = New System.Drawing.Size(0, 20)
+        Me.labelPalabra.Size = New System.Drawing.Size(19, 20)
         Me.labelPalabra.TabIndex = 2
+        Me.labelPalabra.Text = "_"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(45, 200)
+        Me.Label3.Location = New System.Drawing.Point(15, 239)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(43, 13)
         Me.Label3.TabIndex = 3
@@ -74,94 +65,67 @@ Partial Class Ahorcado
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(129, 37)
+        Me.Label4.Location = New System.Drawing.Point(170, 37)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(84, 13)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Letras pulsadas:"
         '
-        'LabelFallo1
-        '
-        Me.LabelFallo1.AutoSize = True
-        Me.LabelFallo1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelFallo1.Location = New System.Drawing.Point(18, 67)
-        Me.LabelFallo1.Name = "LabelFallo1"
-        Me.LabelFallo1.Size = New System.Drawing.Size(18, 25)
-        Me.LabelFallo1.TabIndex = 7
-        Me.LabelFallo1.Text = "|"
-        '
-        'LabelFallos2al4
-        '
-        Me.LabelFallos2al4.AutoSize = True
-        Me.LabelFallos2al4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelFallos2al4.Location = New System.Drawing.Point(18, 92)
-        Me.LabelFallos2al4.Name = "LabelFallos2al4"
-        Me.LabelFallos2al4.Size = New System.Drawing.Size(25, 25)
-        Me.LabelFallos2al4.TabIndex = 8
-        Me.LabelFallos2al4.Text = "| "
-        '
-        'LabelFallos5y6
-        '
-        Me.LabelFallos5y6.AutoSize = True
-        Me.LabelFallos5y6.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelFallos5y6.Location = New System.Drawing.Point(18, 117)
-        Me.LabelFallos5y6.Name = "LabelFallos5y6"
-        Me.LabelFallos5y6.Size = New System.Drawing.Size(18, 25)
-        Me.LabelFallos5y6.TabIndex = 9
-        Me.LabelFallos5y6.Text = "|"
-        '
         'TextBoxLetras
         '
         Me.TextBoxLetras.AcceptsTab = True
+        Me.TextBoxLetras.BackColor = System.Drawing.SystemColors.ControlLight
         Me.TextBoxLetras.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBoxLetras.DetectUrls = False
-        Me.TextBoxLetras.Location = New System.Drawing.Point(132, 53)
+        Me.TextBoxLetras.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.TextBoxLetras.Location = New System.Drawing.Point(173, 53)
         Me.TextBoxLetras.Name = "TextBoxLetras"
         Me.TextBoxLetras.ReadOnly = True
         Me.TextBoxLetras.Size = New System.Drawing.Size(100, 96)
         Me.TextBoxLetras.TabIndex = 0
         Me.TextBoxLetras.Text = ""
         '
-        'LabelFinAhorcado
+        'imgAhorcado
         '
-        Me.LabelFinAhorcado.AutoSize = True
-        Me.LabelFinAhorcado.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelFinAhorcado.Location = New System.Drawing.Point(18, 142)
-        Me.LabelFinAhorcado.Name = "LabelFinAhorcado"
-        Me.LabelFinAhorcado.Size = New System.Drawing.Size(18, 25)
-        Me.LabelFinAhorcado.TabIndex = 10
-        Me.LabelFinAhorcado.Text = "|"
+        Me.imgAhorcado.Image = Global.WindowsApplication1.My.Resources.Resources.imgInicio
+        Me.imgAhorcado.InitialImage = Global.WindowsApplication1.My.Resources.Resources.imgInicio
+        Me.imgAhorcado.Location = New System.Drawing.Point(18, 25)
+        Me.imgAhorcado.Name = "imgAhorcado"
+        Me.imgAhorcado.Size = New System.Drawing.Size(146, 178)
+        Me.imgAhorcado.TabIndex = 5
+        Me.imgAhorcado.TabStop = False
+        '
+        'Timer1
+        '
+        Me.Timer1.Interval = 500
         '
         'Ahorcado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(258, 261)
-        Me.Controls.Add(Me.LabelFinAhorcado)
+        Me.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.ClientSize = New System.Drawing.Size(286, 261)
+        Me.Controls.Add(Me.imgAhorcado)
         Me.Controls.Add(Me.TextBoxLetras)
-        Me.Controls.Add(Me.LabelFallos5y6)
-        Me.Controls.Add(Me.LabelFallos2al4)
-        Me.Controls.Add(Me.LabelFallo1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.labelPalabra)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.labelAhorcado)
+        Me.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Ahorcado"
         Me.Text = "Ahorcado"
+        CType(Me.imgAhorcado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents labelAhorcado As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents labelPalabra As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents LabelFallo1 As System.Windows.Forms.Label
-    Friend WithEvents LabelFallos2al4 As System.Windows.Forms.Label
-    Friend WithEvents LabelFallos5y6 As System.Windows.Forms.Label
     Friend WithEvents TextBoxLetras As System.Windows.Forms.RichTextBox
-    Friend WithEvents LabelFinAhorcado As System.Windows.Forms.Label
+    Friend WithEvents imgAhorcado As System.Windows.Forms.PictureBox
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 
 End Class
