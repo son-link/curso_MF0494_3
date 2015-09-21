@@ -35,6 +35,8 @@ Partial Class tresenraya
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtTurnoDe = New System.Windows.Forms.Label()
         Me.btnReiniciar = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
@@ -44,7 +46,7 @@ Partial Class tresenraya
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Button1.Location = New System.Drawing.Point(13, 13)
+        Me.Button1.Location = New System.Drawing.Point(3, 3)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(70, 70)
         Me.Button1.TabIndex = 0
@@ -58,7 +60,7 @@ Partial Class tresenraya
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Button2.Location = New System.Drawing.Point(89, 13)
+        Me.Button2.Location = New System.Drawing.Point(79, 3)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(70, 70)
         Me.Button2.TabIndex = 1
@@ -72,7 +74,7 @@ Partial Class tresenraya
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Button3.Location = New System.Drawing.Point(165, 13)
+        Me.Button3.Location = New System.Drawing.Point(155, 3)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(70, 70)
         Me.Button3.TabIndex = 2
@@ -86,7 +88,7 @@ Partial Class tresenraya
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Button4.Location = New System.Drawing.Point(13, 89)
+        Me.Button4.Location = New System.Drawing.Point(3, 79)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(70, 70)
         Me.Button4.TabIndex = 3
@@ -100,7 +102,7 @@ Partial Class tresenraya
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Button5.Location = New System.Drawing.Point(89, 89)
+        Me.Button5.Location = New System.Drawing.Point(79, 79)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(70, 70)
         Me.Button5.TabIndex = 4
@@ -114,7 +116,7 @@ Partial Class tresenraya
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Button6.Location = New System.Drawing.Point(165, 89)
+        Me.Button6.Location = New System.Drawing.Point(155, 79)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(70, 70)
         Me.Button6.TabIndex = 5
@@ -128,7 +130,7 @@ Partial Class tresenraya
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Button7.Location = New System.Drawing.Point(12, 165)
+        Me.Button7.Location = New System.Drawing.Point(3, 155)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(70, 70)
         Me.Button7.TabIndex = 6
@@ -142,7 +144,7 @@ Partial Class tresenraya
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button8.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Button8.Location = New System.Drawing.Point(88, 165)
+        Me.Button8.Location = New System.Drawing.Point(79, 155)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(70, 70)
         Me.Button8.TabIndex = 7
@@ -156,7 +158,7 @@ Partial Class tresenraya
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button9.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Button9.Location = New System.Drawing.Point(165, 165)
+        Me.Button9.Location = New System.Drawing.Point(155, 155)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(70, 70)
         Me.Button9.TabIndex = 8
@@ -200,29 +202,38 @@ Partial Class tresenraya
         Me.btnReiniciar.Text = "Reiniciar"
         Me.btnReiniciar.UseVisualStyleBackColor = False
         '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.Button2)
+        Me.Panel1.Controls.Add(Me.Button3)
+        Me.Panel1.Controls.Add(Me.Button4)
+        Me.Panel1.Controls.Add(Me.Button9)
+        Me.Panel1.Controls.Add(Me.Button5)
+        Me.Panel1.Controls.Add(Me.Button8)
+        Me.Panel1.Controls.Add(Me.Button6)
+        Me.Panel1.Controls.Add(Me.Button7)
+        Me.Panel1.Location = New System.Drawing.Point(12, 12)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(228, 229)
+        Me.Panel1.TabIndex = 14
+        '
         'tresenraya
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.ForestGreen
-        Me.ClientSize = New System.Drawing.Size(249, 331)
+        Me.ClientSize = New System.Drawing.Size(252, 331)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnReiniciar)
         Me.Controls.Add(Me.txtTurnoDe)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button9)
-        Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "tresenraya"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Tres en raya"
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -239,5 +250,6 @@ Partial Class tresenraya
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtTurnoDe As System.Windows.Forms.Label
     Friend WithEvents btnReiniciar As System.Windows.Forms.Button
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
 
 End Class

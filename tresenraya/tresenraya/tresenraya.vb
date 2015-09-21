@@ -57,7 +57,7 @@
     Private Sub btnVolverJugar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnReiniciar.Click
         If MsgBox("¿Realmente quiere reiniciar el juego?", MsgBoxStyle.RetryCancel, "Reiniciar") = vbRetry Then
             Inicio.Visible = True
-            'limpiar()
+            limpiar()
         End If
     End Sub
 

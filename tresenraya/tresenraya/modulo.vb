@@ -1,6 +1,7 @@
 ﻿Module modulo
     Public TurnoDe As String
     Public TurnoNumero As Integer
+    Public casillas(2, 2)
 
     Public Function compTurno(ByVal button As Object) As String
         If TurnoDe = "X" Then
@@ -19,38 +20,61 @@
         TurnoNumero = TurnoNumero + 1
     End Function
 
+    'Public Function 
+
     Public Function compGanador() As Boolean
         Dim ganador As Boolean
+        Dim campos_vacios As Integer = 9
         ganador = False
-        If TurnoNumero = 2 Then
-            tresenraya.btnReiniciar.Enabled = True
-        ElseIf TurnoNumero >= 5 Then
-            If tresenraya.Button1.Text <> "" And tresenraya.Button2.Text <> "" And tresenraya.Button3.Text <> "" And tresenraya.Button1.Text = tresenraya.Button2.Text And tresenraya.Button2.Text = tresenraya.Button3.Text Then
-                ganador = True
-            ElseIf tresenraya.Button4.Text <> "" And tresenraya.Button5.Text <> "" And tresenraya.Button6.Text <> "" And tresenraya.Button4.Text = tresenraya.Button5.Text And tresenraya.Button5.Text = tresenraya.Button6.Text Then
-                ganador = True
-            ElseIf tresenraya.Button7.Text <> "" And tresenraya.Button8.Text <> "" And tresenraya.Button9.Text <> "" And tresenraya.Button7.Text = tresenraya.Button8.Text And tresenraya.Button8.Text = tresenraya.Button9.Text Then
-                ganador = True
-            ElseIf tresenraya.Button1.Text <> "" And tresenraya.Button4.Text <> "" And tresenraya.Button7.Text <> "" And tresenraya.Button1.Text = tresenraya.Button4.Text And tresenraya.Button4.Text = tresenraya.Button7.Text Then
-                ganador = True
-            ElseIf tresenraya.Button2.Text <> "" And tresenraya.Button5.Text <> "" And tresenraya.Button8.Text <> "" And tresenraya.Button2.Text = tresenraya.Button5.Text And tresenraya.Button5.Text = tresenraya.Button8.Text Then
-                ganador = True
-            ElseIf tresenraya.Button3.Text <> "" And tresenraya.Button6.Text <> "" And tresenraya.Button9.Text <> "" And tresenraya.Button3.Text = tresenraya.Button6.Text And tresenraya.Button6.Text = tresenraya.Button9.Text Then
-                ganador = True
-            ElseIf tresenraya.Button1.Text <> "" And tresenraya.Button5.Text <> "" And tresenraya.Button9.Text <> "" And tresenraya.Button1.Text = tresenraya.Button5.Text And tresenraya.Button5.Text = tresenraya.Button9.Text Then
-                ganador = True
-            ElseIf tresenraya.Button3.Text <> "" And tresenraya.Button5.Text <> "" And tresenraya.Button7.Text <> "" And tresenraya.Button3.Text = tresenraya.Button5.Text And tresenraya.Button5.Text = tresenraya.Button7.Text Then
-                ganador = True
-            ElseIf tresenraya.Button1.Text <> "" And tresenraya.Button2.Text <> "" And tresenraya.Button3.Text <> "" And tresenraya.Button4.Text <> "" And tresenraya.Button5.Text <> "" And tresenraya.Button6.Text <> "" And tresenraya.Button7.Text <> "" And tresenraya.Button8.Text <> "" And tresenraya.Button9.Text <> "" Then
-                If MsgBox("Ha habido un empate." & vbNewLine & "¿Quereis volver a jugar?", MsgBoxStyle.RetryCancel, "Empate") = vbRetry Then
+        Dim x As Integer = 0
+        Dim y As Integer = 0
+        For i As Integer = 1 To 9
+            Dim name As String = "Button" & i
+            Console.WriteLine(name)
+            Console.WriteLine("X vale " & x & " e Y vale " & y)
+            casillas(x, y) = tresenraya.Panel1.Controls(name).Text
+            If casillas(x, y) <> "" Then
+                campos_vacios = campos_vacios - 1
+            End If
+            If x = 2 Then
+                y = y + 1
+                x = 0
+            Else
+                x = x + 1
+            End If
+        Next
+        If campos_vacios > 0 Then
+            If TurnoNumero = 2 Then
+                tresenraya.btnReiniciar.Enabled = True
+            ElseIf TurnoNumero >= 5 Then
+                If casillas(0, 0) <> "" And casillas(1, 0) <> "" And casillas(2, 0) <> "" And casillas(0, 0) = casillas(1, 0) And casillas(1, 0) = casillas(2, 0) Then
+                    ganador = True
+                ElseIf casillas(0, 1) <> "" And casillas(1, 1) <> "" And casillas(2, 1) <> "" And casillas(0, 1) = casillas(1, 1) And casillas(1, 1) = casillas(2, 1) Then
+                    ganador = True
+                ElseIf casillas(0, 2) <> "" And casillas(1, 2) <> "" And casillas(2, 2) <> "" And casillas(0, 2) = casillas(1, 2) And casillas(1, 2) = casillas(2, 2) Then
+                    ganador = True
+                ElseIf casillas(0, 0) <> "" And casillas(0, 1) <> "" And casillas(0, 2) <> "" And casillas(0, 0) = casillas(0, 1) And casillas(0, 1) = casillas(0, 2) Then
+                    ganador = True
+                ElseIf casillas(1, 0) <> "" And casillas(1, 1) <> "" And casillas(1, 2) <> "" And casillas(1, 0) = casillas(1, 1) And casillas(1, 1) = casillas(1, 2) Then
+                    ganador = True
+                ElseIf casillas(2, 0) <> "" And casillas(2, 1) <> "" And casillas(2, 2) <> "" And casillas(2, 0) = casillas(2, 1) And casillas(2, 1) = casillas(2, 2) Then
+                    ganador = True
+                ElseIf casillas(0, 0) <> "" And casillas(1, 1) <> "" And casillas(2, 2) <> "" And casillas(0, 0) = casillas(1, 1) And casillas(1, 1) = casillas(2, 2) Then
+                    ganador = True
+                ElseIf casillas(0, 2) <> "" And casillas(1, 1) <> "" And casillas(0, 2) <> "" And casillas(0, 2) = casillas(1, 1) And casillas(1, 1) = casillas(0, 2) Then
+                    ganador = True
+                End If
+            End If
+            'End If
+            If ganador Then
+                If MsgBox("El ganador es " & TurnoDe & vbNewLine & "¿Quereis volver a jugar?", MsgBoxStyle.YesNo, "Tenemos ganador/a") = 6 Then
                     Inicio.Show()
                 Else
                     salir()
                 End If
             End If
-        End If
-        If ganador Then
-            If MsgBox("El ganador es " & TurnoDe & vbNewLine & "¿Quereis volver a jugar?", MsgBoxStyle.YesNo, "Tenemos ganador/a") = 6 Then
+        Else
+            If MsgBox("Ha habido un empate." & vbNewLine & "¿Quereis volver a jugar?", MsgBoxStyle.RetryCancel, "Empate") = vbRetry Then
                 Inicio.Show()
             Else
                 salir()
@@ -65,15 +89,9 @@
     End Function
 
     Public Function limpiar() As Boolean
-        tresenraya.Button1.Text = ""
-        tresenraya.Button2.Text = ""
-        tresenraya.Button3.Text = ""
-        tresenraya.Button4.Text = ""
-        tresenraya.Button5.Text = ""
-        tresenraya.Button6.Text = ""
-        tresenraya.Button7.Text = ""
-        tresenraya.Button8.Text = ""
-        tresenraya.Button9.Text = ""
+        For Each boton In tresenraya.Panel1.Controls
+            boton.text = ""
+        Next
         TurnoNumero = 1
         tresenraya.btnReiniciar.Enabled = False
     End Function

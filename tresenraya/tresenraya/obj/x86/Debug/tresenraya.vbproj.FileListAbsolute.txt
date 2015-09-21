@@ -8,3 +8,13 @@ C:\Users\Tarde 4\Documents\Visual Studio 2010\Projects\tresenraya\tresenraya\obj
 C:\Users\Tarde 4\Documents\Visual Studio 2010\Projects\tresenraya\tresenraya\obj\x86\Debug\tresenraya.xml
 C:\Users\Tarde 4\Documents\Visual Studio 2010\Projects\tresenraya\tresenraya\obj\x86\Debug\tresenraya.pdb
 C:\Users\Tarde 4\documents\visual studio 2010\Projects\tresenraya\tresenraya\obj\x86\Debug\WindowsApplication1.Inicio.resources
+C:\Users\Tarde 4\Documents\Visual Studio 2010\Projects\tresenraya2\tresenraya\obj\x86\Debug\tresenraya.exe
+C:\Users\Tarde 4\Documents\Visual Studio 2010\Projects\tresenraya2\tresenraya\obj\x86\Debug\tresenraya.xml
+C:\Users\Tarde 4\Documents\Visual Studio 2010\Projects\tresenraya2\tresenraya\obj\x86\Debug\tresenraya.pdb
+C:\Users\Tarde 4\Documents\Visual Studio 2010\Projects\tresenraya2\tresenraya\bin\Debug\tresenraya.exe
+C:\Users\Tarde 4\Documents\Visual Studio 2010\Projects\tresenraya2\tresenraya\bin\Debug\tresenraya.pdb
+C:\Users\Tarde 4\Documents\Visual Studio 2010\Projects\tresenraya2\tresenraya\bin\Debug\tresenraya.xml
+C:\Users\Tarde 4\Documents\Visual Studio 2010\Projects\tresenraya2\tresenraya\obj\x86\Debug\WindowsApplication1.Inicio.resources
+C:\Users\Tarde 4\Documents\Visual Studio 2010\Projects\tresenraya2\tresenraya\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\Tarde 4\Documents\Visual Studio 2010\Projects\tresenraya2\tresenraya\obj\x86\Debug\WindowsApplication1.tresenraya.resources
+C:\Users\Tarde 4\Documents\Visual Studio 2010\Projects\tresenraya2\tresenraya\obj\x86\Debug\tresenraya.vbproj.GenerateResource.Cache
