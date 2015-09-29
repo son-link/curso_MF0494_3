@@ -48,6 +48,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icono.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -72,11 +75,11 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="simon.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="simon.Designer.vb">
+      <DependentUpon>simon.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -96,8 +99,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="simon.resx">
+      <DependentUpon>simon.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -118,21 +121,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="sounds\GUI_Sound_Effects_by_Lokif\load.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="sounds\GUI_Sound_Effects_by_Lokif\misc_menu_2.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="sounds\GUI_Sound_Effects_by_Lokif\misc_menu_3.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="sounds\GUI_Sound_Effects_by_Lokif\misc_menu_4.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="sounds\GUI_Sound_Effects_by_Lokif\negative.wav" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="sounds\amarillo.wav" />
   </ItemGroup>
   <ItemGroup>
@@ -143,6 +131,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="sounds\verde.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\verde_encendido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\amarillo_apagado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\amarillo_encendido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\azul_apagado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\rojo_apagado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\rojo_encendido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\verde_apagado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\azul_encendido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\icono.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icono.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
