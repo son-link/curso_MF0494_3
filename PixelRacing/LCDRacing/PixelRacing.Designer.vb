@@ -26,6 +26,14 @@ Partial Class PixelRacing
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PixelRacing))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.PanelGame = New System.Windows.Forms.Panel()
+        Me.LabelGame = New System.Windows.Forms.Label()
+        Me.pbExplosion = New System.Windows.Forms.PictureBox()
+        Me.ene1 = New System.Windows.Forms.PictureBox()
+        Me.ene3 = New System.Windows.Forms.PictureBox()
+        Me.pbPlayer = New System.Windows.Forms.PictureBox()
+        Me.ene2 = New System.Windows.Forms.PictureBox()
+        Me.pbBorder = New System.Windows.Forms.PictureBox()
+        Me.pbBG = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -36,16 +44,7 @@ Partial Class PixelRacing
         Me.LabelLives = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.AxWindowsMediaPlayer1 = New AxWMPLib.AxWindowsMediaPlayer()
-        Me.pbExplosion = New System.Windows.Forms.PictureBox()
-        Me.ene1 = New System.Windows.Forms.PictureBox()
-        Me.ene3 = New System.Windows.Forms.PictureBox()
-        Me.pbPlayer = New System.Windows.Forms.PictureBox()
-        Me.ene2 = New System.Windows.Forms.PictureBox()
-        Me.pbBorder = New System.Windows.Forms.PictureBox()
-        Me.pbBG = New System.Windows.Forms.PictureBox()
-        Me.LabelGame = New System.Windows.Forms.Label()
         Me.PanelGame.SuspendLayout()
-        CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbExplosion, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ene1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ene3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -53,6 +52,7 @@ Partial Class PixelRacing
         CType(Me.ene2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbBorder, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbBG, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Timer1
@@ -78,6 +78,91 @@ Partial Class PixelRacing
         Me.PanelGame.Name = "PanelGame"
         Me.PanelGame.Size = New System.Drawing.Size(208, 320)
         Me.PanelGame.TabIndex = 0
+        '
+        'LabelGame
+        '
+        Me.LabelGame.BackColor = System.Drawing.Color.White
+        Me.LabelGame.ForeColor = System.Drawing.Color.Black
+        Me.LabelGame.Location = New System.Drawing.Point(0, 161)
+        Me.LabelGame.Name = "LabelGame"
+        Me.LabelGame.Size = New System.Drawing.Size(208, 23)
+        Me.LabelGame.TabIndex = 32
+        Me.LabelGame.Text = "Press P to start game"
+        Me.LabelGame.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'pbExplosion
+        '
+        Me.pbExplosion.Location = New System.Drawing.Point(88, 247)
+        Me.pbExplosion.Name = "pbExplosion"
+        Me.pbExplosion.Size = New System.Drawing.Size(32, 32)
+        Me.pbExplosion.TabIndex = 29
+        Me.pbExplosion.TabStop = False
+        Me.pbExplosion.Visible = False
+        '
+        'ene1
+        '
+        Me.ene1.BackColor = System.Drawing.Color.Transparent
+        Me.ene1.Image = Global.WindowsApplication1.My.Resources.Resources.ene1
+        Me.ene1.Location = New System.Drawing.Point(41, 5)
+        Me.ene1.Name = "ene1"
+        Me.ene1.Size = New System.Drawing.Size(28, 52)
+        Me.ene1.TabIndex = 31
+        Me.ene1.TabStop = False
+        Me.ene1.Tag = "enemy"
+        Me.ene1.Visible = False
+        '
+        'ene3
+        '
+        Me.ene3.BackColor = System.Drawing.Color.Transparent
+        Me.ene3.Image = Global.WindowsApplication1.My.Resources.Resources.ene3
+        Me.ene3.Location = New System.Drawing.Point(137, 5)
+        Me.ene3.Name = "ene3"
+        Me.ene3.Size = New System.Drawing.Size(28, 52)
+        Me.ene3.TabIndex = 30
+        Me.ene3.TabStop = False
+        Me.ene3.Tag = "enemy"
+        Me.ene3.Visible = False
+        '
+        'pbPlayer
+        '
+        Me.pbPlayer.BackColor = System.Drawing.Color.Transparent
+        Me.pbPlayer.Image = CType(resources.GetObject("pbPlayer.Image"), System.Drawing.Image)
+        Me.pbPlayer.Location = New System.Drawing.Point(90, 261)
+        Me.pbPlayer.Name = "pbPlayer"
+        Me.pbPlayer.Size = New System.Drawing.Size(28, 52)
+        Me.pbPlayer.TabIndex = 28
+        Me.pbPlayer.TabStop = False
+        '
+        'ene2
+        '
+        Me.ene2.BackColor = System.Drawing.Color.Transparent
+        Me.ene2.Image = Global.WindowsApplication1.My.Resources.Resources.ene2
+        Me.ene2.Location = New System.Drawing.Point(89, 5)
+        Me.ene2.Name = "ene2"
+        Me.ene2.Size = New System.Drawing.Size(28, 52)
+        Me.ene2.TabIndex = 27
+        Me.ene2.TabStop = False
+        Me.ene2.Tag = "enemy"
+        Me.ene2.Visible = False
+        '
+        'pbBorder
+        '
+        Me.pbBorder.Image = Global.WindowsApplication1.My.Resources.Resources.border
+        Me.pbBorder.Location = New System.Drawing.Point(0, -96)
+        Me.pbBorder.Name = "pbBorder"
+        Me.pbBorder.Size = New System.Drawing.Size(208, 416)
+        Me.pbBorder.TabIndex = 26
+        Me.pbBorder.TabStop = False
+        '
+        'pbBG
+        '
+        Me.pbBG.BackColor = System.Drawing.Color.Transparent
+        Me.pbBG.Image = Global.WindowsApplication1.My.Resources.Resources.bg
+        Me.pbBG.Location = New System.Drawing.Point(0, 0)
+        Me.pbBG.Name = "pbBG"
+        Me.pbBG.Size = New System.Drawing.Size(208, 320)
+        Me.pbBG.TabIndex = 25
+        Me.pbBG.TabStop = False
         '
         'Label8
         '
@@ -177,91 +262,6 @@ Partial Class PixelRacing
         Me.AxWindowsMediaPlayer1.TabIndex = 6
         Me.AxWindowsMediaPlayer1.Visible = False
         '
-        'pbExplosion
-        '
-        Me.pbExplosion.Location = New System.Drawing.Point(88, 247)
-        Me.pbExplosion.Name = "pbExplosion"
-        Me.pbExplosion.Size = New System.Drawing.Size(32, 32)
-        Me.pbExplosion.TabIndex = 29
-        Me.pbExplosion.TabStop = False
-        Me.pbExplosion.Visible = False
-        '
-        'ene1
-        '
-        Me.ene1.BackColor = System.Drawing.Color.Transparent
-        Me.ene1.Image = Global.WindowsApplication1.My.Resources.Resources.ene1
-        Me.ene1.Location = New System.Drawing.Point(41, 5)
-        Me.ene1.Name = "ene1"
-        Me.ene1.Size = New System.Drawing.Size(28, 52)
-        Me.ene1.TabIndex = 31
-        Me.ene1.TabStop = False
-        Me.ene1.Tag = "enemy"
-        Me.ene1.Visible = False
-        '
-        'ene3
-        '
-        Me.ene3.BackColor = System.Drawing.Color.Transparent
-        Me.ene3.Image = Global.WindowsApplication1.My.Resources.Resources.ene3
-        Me.ene3.Location = New System.Drawing.Point(137, 5)
-        Me.ene3.Name = "ene3"
-        Me.ene3.Size = New System.Drawing.Size(28, 52)
-        Me.ene3.TabIndex = 30
-        Me.ene3.TabStop = False
-        Me.ene3.Tag = "enemy"
-        Me.ene3.Visible = False
-        '
-        'pbPlayer
-        '
-        Me.pbPlayer.BackColor = System.Drawing.Color.Transparent
-        Me.pbPlayer.Image = CType(resources.GetObject("pbPlayer.Image"), System.Drawing.Image)
-        Me.pbPlayer.Location = New System.Drawing.Point(90, 261)
-        Me.pbPlayer.Name = "pbPlayer"
-        Me.pbPlayer.Size = New System.Drawing.Size(28, 52)
-        Me.pbPlayer.TabIndex = 28
-        Me.pbPlayer.TabStop = False
-        '
-        'ene2
-        '
-        Me.ene2.BackColor = System.Drawing.Color.Transparent
-        Me.ene2.Image = Global.WindowsApplication1.My.Resources.Resources.ene2
-        Me.ene2.Location = New System.Drawing.Point(89, 5)
-        Me.ene2.Name = "ene2"
-        Me.ene2.Size = New System.Drawing.Size(28, 52)
-        Me.ene2.TabIndex = 27
-        Me.ene2.TabStop = False
-        Me.ene2.Tag = "enemy"
-        Me.ene2.Visible = False
-        '
-        'pbBorder
-        '
-        Me.pbBorder.Image = Global.WindowsApplication1.My.Resources.Resources.border
-        Me.pbBorder.Location = New System.Drawing.Point(0, -96)
-        Me.pbBorder.Name = "pbBorder"
-        Me.pbBorder.Size = New System.Drawing.Size(208, 416)
-        Me.pbBorder.TabIndex = 26
-        Me.pbBorder.TabStop = False
-        '
-        'pbBG
-        '
-        Me.pbBG.BackColor = System.Drawing.Color.Transparent
-        Me.pbBG.Image = Global.WindowsApplication1.My.Resources.Resources.bg
-        Me.pbBG.Location = New System.Drawing.Point(0, 0)
-        Me.pbBG.Name = "pbBG"
-        Me.pbBG.Size = New System.Drawing.Size(208, 320)
-        Me.pbBG.TabIndex = 25
-        Me.pbBG.TabStop = False
-        '
-        'LabelGame
-        '
-        Me.LabelGame.BackColor = System.Drawing.Color.White
-        Me.LabelGame.ForeColor = System.Drawing.Color.Black
-        Me.LabelGame.Location = New System.Drawing.Point(0, 161)
-        Me.LabelGame.Name = "LabelGame"
-        Me.LabelGame.Size = New System.Drawing.Size(208, 23)
-        Me.LabelGame.TabIndex = 32
-        Me.LabelGame.Text = "Press P to start game"
-        Me.LabelGame.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'PixelRacing
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -278,7 +278,6 @@ Partial Class PixelRacing
         Me.Text = "PixelRacing"
         Me.PanelGame.ResumeLayout(False)
         Me.PanelGame.PerformLayout()
-        CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbExplosion, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ene1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ene3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -286,6 +285,7 @@ Partial Class PixelRacing
         CType(Me.ene2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbBorder, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbBG, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

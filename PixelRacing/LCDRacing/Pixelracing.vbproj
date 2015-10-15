@@ -181,6 +181,7 @@
     <None Include="img\ene3.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="snd\1up.wav" />
     <None Include="snd\game_over_2.wav" />
     <None Include="snd\game_over.wav" />
     <None Include="bin\Debug\bg_music.mp3" />

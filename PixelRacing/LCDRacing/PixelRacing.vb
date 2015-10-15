@@ -9,7 +9,7 @@
     Dim level As Integer = 1
     Dim block As Boolean = False
     Dim speed As Integer = 70
-    Dim upSpeed As Integer = 2000
+    Dim upSpeed As Integer = 3000
     Dim newLiveAt As Integer = 5000
     Dim gameState As Integer = 0 ' 0: no play, 1: play/pause, 2: game over
     Private Declare Function GetTickCount Lib "kernel32" () As Integer
@@ -81,7 +81,7 @@
     End Sub
 
     Private Sub Timer1_Tick(ByVal sender As Object, ByVal e As System.EventArgs) Handles Timer1.Tick
-        If cont = 20 Then
+        If cont = 22 Then
             cont = 0
             newEnemy()
         Else
@@ -103,9 +103,10 @@
                         End If
                         If score = upSpeed And Timer1.Interval > 20 Then
                             Timer1.Interval = Timer1.Interval - 10
-                            upSpeed = upSpeed + 2000
+                            upSpeed = upSpeed + 3000
                         End If
                         If score = newLiveAt Then
+                            My.Computer.Audio.Play(My.Resources._1up, AudioPlayMode.Background)
                             lives = lives + 1
                             LabelLives.Text = lives
                             newLiveAt = newLiveAt + 5000

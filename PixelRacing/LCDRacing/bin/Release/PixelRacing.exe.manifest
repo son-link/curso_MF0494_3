@@ -50,7 +50,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>lhJoeIMS2PKrXZpOxudAPn8ONl8=</dsig:DigestValue>
+        <dsig:DigestValue>FrPAeEGsZn3uB0uyxG3uL3mbuIo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,19 +62,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>bDzqezFYdhxXSnWombCv2HsA7iU=</dsig:DigestValue>
+        <dsig:DigestValue>Ev/BBart9UpXzg57df8FOPLRol4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PixelRacing.exe" size="566272">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PixelRacing.exe" size="602112">
       <assemblyIdentity name="PixelRacing" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>B8pmYaINr4FHArWW8yytETb8irw=</dsig:DigestValue>
+        <dsig:DigestValue>epbQY/bv/iEETyHfQyECGENmq9k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
